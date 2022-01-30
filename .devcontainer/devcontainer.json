@@ -1,0 +1,21 @@
+// See https://aka.ms/vscode-remote/devcontainer.json for format details.
+{
+	"name": "ACME OrderService",
+	"dockerComposeFile": [
+		"docker-compose.yml",
+	],
+	// The name of the following service has to match one of the services in docker-compose.yml
+	"service": "devcontainer",
+	"workspaceFolder": "/src",
+	"extensions": [
+		"firsttris.vscode-jest-runner",
+		"esbenp.prettier-vscode",
+		"eamodio.gitlens",
+		"ms-vscode.vscode-typescript-tslint-plugin",
+		"ms-vsliveshare.vsliveshare",
+		"rtbenfield.vscode-jest-test-adapter",
+		"dbaeumer.vscode-eslint",
+	],
+	"shutdownAction": "stopCompose",
+	"remoteUser": "node",
+}
