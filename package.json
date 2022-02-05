@@ -1,0 +1,23 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RimuTec/dev-container-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RimuTec/dev-container-typescript/issues"
+  },
+  "homepage": "https://github.com/RimuTec/dev-container-typescript#readme",
+  "devDependencies": {
+    "typescript": "^4.5.5"
+  }
+}
