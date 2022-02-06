@@ -7,6 +7,8 @@ services:
     container_name: orderservice-dev-container
     hostname: orderservice-dev.local
     working_dir: /src
+    ports:
+       - 3000:3000 # <<<<<< if preferred, explicit forward the port used by express
     volumes:
        - ..:/src
        # Allow AWS CLI and other tools to read an AWS profile
