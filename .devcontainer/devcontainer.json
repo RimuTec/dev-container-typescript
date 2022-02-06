@@ -9,8 +9,8 @@
 	"workspaceFolder": "/src",
 	"extensions": [
 		"firsttris.vscode-jest-runner",
-		"esbenp.prettier-vscode",
 		"eamodio.gitlens",
+		"editorconfig.editorconfig",
 		"ms-vscode.vscode-typescript-tslint-plugin",
 		"ms-vsliveshare.vsliveshare",
 		"rtbenfield.vscode-jest-test-adapter",
