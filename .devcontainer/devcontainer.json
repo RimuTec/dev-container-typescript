@@ -11,7 +11,6 @@
 		"firsttris.vscode-jest-runner",
 		"eamodio.gitlens",
 		"editorconfig.editorconfig",
-		"ms-vscode.vscode-typescript-tslint-plugin",
 		"ms-vsliveshare.vsliveshare",
 		"rtbenfield.vscode-jest-test-adapter",
 		"dbaeumer.vscode-eslint",
