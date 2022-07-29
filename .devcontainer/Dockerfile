@@ -15,3 +15,8 @@ RUN apt-get update
 RUN apt-get install -y \
     lsb-release \
     curl
+
+
+################################################################################
+# Install TypeScript
+RUN npm install -g typescript@4.7.4
