@@ -8,7 +8,7 @@ services:
       build: .
       container_name: typescript-dev
       hostname: typescript-dev.local
-      working_dir: /src
+      working_dir: /work
       ports:
          # Change the portnumber in case you have more than one dev container based on this
          # template. For example, you could use something like:
@@ -16,7 +16,7 @@ services:
          # [Manfred, 29jul2022]
          - 3000:3000 # <<<<<< if preferred, explicit forward the port used by express
       volumes:
-         - ..:/src
+         - ..:/work
          # Allow AWS CLI and other tools to read an AWS profile. You can remove the following
          # If you are not using AWS. [Manfred, 29jul2022]
          - ~/.aws:/home/node/.aws

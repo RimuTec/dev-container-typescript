@@ -6,7 +6,7 @@
 	],
 	// The name of the following service has to match one of the services in docker-compose.yml
 	"service": "typescript-dev",
-	"workspaceFolder": "/src",
+	"workspaceFolder": "/work",
 	"extensions": [
 		"firsttris.vscode-jest-runner",
 		"eamodio.gitlens",
