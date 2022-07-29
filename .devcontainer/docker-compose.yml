@@ -1,16 +1,19 @@
 version: '3.7'
 
 services:
-  devcontainer:
-    image: acme/orderservice-dev-container:0.1
-    build: .
-    container_name: orderservice-dev-container
-    hostname: orderservice-dev.local
-    working_dir: /src
-    ports:
-       - 3000:3000 # <<<<<< if preferred, explicit forward the port used by express
-    volumes:
-       - ..:/src
-       # Allow AWS CLI and other tools to read an AWS profile
-       - ~/.aws:/home/node/.aws
-    command: sleep infinity
+   # change the service name, the container name and the hostname for each dev container that connects
+   # to the same virtual network. [Manfred, 29jul2022]
+   typescript-dev:
+      image: typescript-dev:0.1
+      build: .
+      container_name: typescript-dev
+      hostname: typescript-dev.local
+      working_dir: /src
+      ports:
+         - 3000:3000 # <<<<<< if preferred, explicit forward the port used by express
+      volumes:
+         - ..:/src
+         # Allow AWS CLI and other tools to read an AWS profile. You can remove the following
+         # If you are not using AWS. [Manfred, 29jul2022]
+         - ~/.aws:/home/node/.aws
+      command: sleep infinity
