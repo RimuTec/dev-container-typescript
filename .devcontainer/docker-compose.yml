@@ -14,7 +14,10 @@ services:
          # template. For example, you could use something like:
          # - 3100:3000
          # [Manfred, 29jul2022]
-         - 3000:3000 # <<<<<< if preferred, explicit forward the port used by express
+         - "3000:3000" # <<<<<< if preferred, explicit forward the port used by express
+         # Using double quotes for port mapping to avoid YAML reading it as a number with a different base
+         # e.g. "3333:22" would result in port numbers greater than 130000 which are clearly invalid.
+         # Without double quotes YAML interprets it as a number based on 22. [Manfred, 24aug2022]
       volumes:
          - ..:/work
          # Allow AWS CLI and other tools to read an AWS profile. You can remove the following
