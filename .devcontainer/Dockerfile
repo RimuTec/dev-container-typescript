@@ -4,9 +4,9 @@ FROM node:18.7.0
 # [Manfred]
 
 # node may come with an older version of npm. Ensure we have a specific npm.
-RUN npm install -g npm@8.16.0
+RUN npm install -g npm@8.18.0
 # To check if newer versions are available, see https://www.npmjs.com/package/npm
-# Version last checked on 07 Aug 2022. [Manfred]
+# Version last checked on 24 Aug 2022. [Manfred]
 
 
 ################################################################################
