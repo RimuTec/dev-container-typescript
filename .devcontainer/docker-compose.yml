@@ -10,9 +10,9 @@ services:
       hostname: typescript-dev.local
       working_dir: /work
       ports:
-         # Change the portnumber in case you have more than one dev container based on this
+         # Change the port number in case you have more than one dev container based on this
          # template. For example, you could use something like:
-         # - 3100:3000
+         # - "3100:3000"
          # [Manfred, 29jul2022]
          - "3000:3000" # <<<<<< if preferred, explicit forward the port used by express
          # Using double quotes for port mapping to avoid YAML reading it as a number with a different base
