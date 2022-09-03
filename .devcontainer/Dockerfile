@@ -1,12 +1,13 @@
-FROM node:18.7.0
-# This is the latest available LTS version. Newer versions might be available
-# at https://hub.docker.com/_/node Version last checked on 13 June 2022.
-# [Manfred]
+FROM node:18.8.0
+# Latest stable version as of 03 Sep 2022. Newer versions may be available at
+# https://hub.docker.com/_/node or at https://nodejs.org/en/
+# Version last checked on 03 Sep 2022 [Manfred]
 
 # node may come with an older version of npm. Ensure we have a specific npm.
-RUN npm install -g npm@8.18.0
-# To check if newer versions are available, see https://www.npmjs.com/package/npm
-# Version last checked on 24 Aug 2022. [Manfred]
+RUN npm install -g npm@8.19.1
+# Latest stable version as of 03 Sep 2022. Newer versions may be available at
+# https://www.npmjs.com/package/npm
+# Version last checked on 03 Sep 2022 [Manfred]
 
 
 ################################################################################
@@ -19,4 +20,7 @@ RUN apt-get install -y \
 
 ################################################################################
 # Install TypeScript
-RUN npm install -g typescript@4.7.4
+RUN npm install -g typescript@4.8.2
+# Latest stable release. Newer versions might be available from
+# https://www.npmjs.com/search?q=typescript
+# Version last checked on 03 Sep 2022 [Manfred]
