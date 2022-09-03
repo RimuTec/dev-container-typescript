@@ -9,8 +9,8 @@
 	"workspaceFolder": "/work",
 	"extensions": [
 		"firsttris.vscode-jest-runner",
-		"eamodio.gitlens",
 		"editorconfig.editorconfig",
+        "mhutchie.git-graph",
 		"ms-vsliveshare.vsliveshare",
 		"rtbenfield.vscode-jest-test-adapter",
 		"dbaeumer.vscode-eslint",
