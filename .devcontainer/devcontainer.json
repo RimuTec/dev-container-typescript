@@ -1,20 +1,20 @@
 // See https://aka.ms/vscode-remote/devcontainer.json for format details.
 {
-	"name": "TypeScript example",
-	"dockerComposeFile": [
-		"docker-compose.yml",
-	],
-	// The name of the following service has to match one of the services in docker-compose.yml
-	"service": "typescript-dev",
-	"workspaceFolder": "/work",
-	"extensions": [
-		"firsttris.vscode-jest-runner",
-		"editorconfig.editorconfig",
-        "mhutchie.git-graph",
-		"ms-vsliveshare.vsliveshare",
-		"rtbenfield.vscode-jest-test-adapter",
-		"dbaeumer.vscode-eslint",
-	],
-	"shutdownAction": "stopCompose",
-	"remoteUser": "node",
+   "name": "TypeScript example",
+   "dockerComposeFile": [
+      "docker-compose.yml",
+   ],
+   // The name of the following service has to match one of the services in docker-compose.yml
+   "service": "typescript-dev",
+   "workspaceFolder": "/work",
+   "extensions": [
+      "firsttris.vscode-jest-runner",
+      "editorconfig.editorconfig",
+      "mhutchie.git-graph",
+      "ms-vsliveshare.vsliveshare",
+      "rtbenfield.vscode-jest-test-adapter",
+      "dbaeumer.vscode-eslint",
+   ],
+   "shutdownAction": "stopCompose",
+   "remoteUser": "node",
 }
