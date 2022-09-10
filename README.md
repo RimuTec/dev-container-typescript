@@ -6,7 +6,7 @@ Note that this is a full-time dev container. VS Code remotely connects to the de
 
 # How to Use this Repository
 
-If you are at the repository in github, click the green button with "Use Template" to create a new repository with the code of this repository as a starting position.
+If you are at the repository in github, click the green button with `Use this template` to create a new repository with the code of this repository as a starting position.
 
 Then clone your new repository, change the published (aka exposed) port number and create the dev container locally.
 
