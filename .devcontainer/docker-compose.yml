@@ -23,4 +23,12 @@ services:
          # Allow AWS CLI and other tools to read an AWS profile. You can remove the following
          # If you are not using AWS. [Manfred, 29jul2022]
          - ~/.aws:/home/node/.aws
-      command: sleep infinity
+      command: bash -c "/work/.devcontainer/init.sh && sleep infinity"
+      networks:
+         rimutec:
+
+   # If you list further services (ie containers) here, place them in the same virtual network if
+   # you want them being visible to each other. [Manfred, 10sep2022]
+
+networks:
+   rimutec:
