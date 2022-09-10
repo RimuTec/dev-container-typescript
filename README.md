@@ -4,13 +4,13 @@ This is an opinionated dev container for TypeScript. You can use it for all kind
 
 Note that this is a full-time dev container. VS Code remotely connects to the dev container and all commands are executed inside of the dev container. Any terminals you open inside of VS Code are terminals of the dev container. This dev container is not used in a model where it lives only for the duration of one command.
 
-## How to Use this Repository
+# How to Use this Repository
 
 If you are at the repository in github, click the green button with "Use Template" to create a new repository with the code of this repository as a starting position.
 
-Then clone your new repository and create the dev container locally.
+Then clone your new repository, change the published (aka exposed) port number and create the dev container locally.
 
-Once the dev container is running, create your TypeScript project just like you'd do without the dev container. The difference is, that apart from the prerequisites listed below you do not need to install any other software.
+Once the dev container is running, create your TypeScript project just like you'd do without the dev container. The difference is, that apart from the prerequisites listed below, you do not need to install any other software.
 
 # Prerequisites:
 
