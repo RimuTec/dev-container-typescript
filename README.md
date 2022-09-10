@@ -8,7 +8,11 @@ Note that this is a full-time dev container. VS Code remotely connects to the de
 
 If you are at the repository in github, click the green button with `Use this template` to create a new repository with the code of this repository as a starting position.
 
-Then clone your new repository, change the published (aka exposed) port number and create the dev container locally.
+After you created your new repository, change the published (aka exposed) port number to a number that you don't use that. Only then create the dev container locally by reopening it with VS Code or by using the following command in a terminal at the root of the repository:
+
+```bash
+docker-compose -f .devcontainer/docker-compose.yml build
+```
 
 Once the dev container is running, create your TypeScript project just like you'd do without the dev container. The difference is, that apart from the prerequisites listed below, you do not need to install any other software.
 
