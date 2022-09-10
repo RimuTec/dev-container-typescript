@@ -1,13 +1,17 @@
-FROM node:18.8.0
-# Latest stable version as of 03 Sep 2022. Newer versions may be available at
-# https://hub.docker.com/_/node or at https://nodejs.org/en/
-# Version last checked on 03 Sep 2022 [Manfred]
+FROM node:18.9.0
+# Last version check on 10 Sep 2022.
+# Newer versions may be available at https://hub.docker.com/_/node
+# Note that if you want to use this container for a Create React Application (CRA)
+# a safer bet will be the most recent LTS version, which is 16.17.0 as of
+# 10 Sep 2022.
+# [Manfred]
+
 
 # node may come with an older version of npm. Ensure we have a specific npm.
 RUN npm install -g npm@8.19.1
-# Latest stable version as of 03 Sep 2022. Newer versions may be available at
-# https://www.npmjs.com/package/npm
-# Version last checked on 03 Sep 2022 [Manfred]
+# Last version check on 10 Sep 2022.
+# Newer versions might be available at https://www.npmjs.com/search?q=npm
+# [Manfred]
 
 
 ################################################################################
