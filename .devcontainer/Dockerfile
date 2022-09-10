@@ -24,7 +24,7 @@ RUN apt-get install -y \
 
 ################################################################################
 # Install TypeScript
-RUN npm install -g typescript@4.8.2
-# Latest stable release. Newer versions might be available from
-# https://www.npmjs.com/search?q=typescript
-# Version last checked on 03 Sep 2022 [Manfred]
+RUN npm install -g typescript@4.8.3
+# Last version check on 10 Sep 2022.
+# Newer versions might be available at https://www.npmjs.com/search?q=typescript
+# [Manfred]
