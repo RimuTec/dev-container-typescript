@@ -12,7 +12,7 @@ Then clone your new repository and create the dev container locally.
 
 Once the dev container is running, create your TypeScript project just like you'd do without the dev container. The difference is, that apart from the prerequisites listed below you do not need to install any other software.
 
-### Prerequisites:
+# Prerequisites:
 
 You need the following software in order to use this container:
 1. VS Code
@@ -22,10 +22,22 @@ You need the following software in order to use this container:
 
 All other tools, e.g. TypeScript, will be available inside the dev container.
 
+# Concepts and Principles
 
-## Other Notes
+As this container is opinionated, it is maintained with the following concepts in mind:
 
-This repository contains the complete source code for these two articles:
+1. Container to be used full-time, i.e., not just while a command is executed
+2. Designed for VS Code but can be used with other IDEs as well
+3. Trunk-based development. If you have branches other than `main` the settings should still work.
+4. `git pull` does rebase
+5. Auto-forwarding of ports (automatic mapping) by VS Code is switched off. It's better to fail fast. You need to understand how port mapping works. Consult with the Docker documentation for more details.
+6. Use specific versions for node, npm, typescript and similar dependencies to reduce variability.
+7. Use latest stable releases if possible but no pre-release, beta, previews, etc.
+8. Minimize the number of prerequisites for getting started. All other tools should be specified in the dev container.
+
+# Other Notes
+
+This repository also contains the complete source code for these two articles:
 
 - ["Creating a Dev Container for TypeScript and VS Code - Part 1"](https://manfredmlange.medium.com/creating-a-dev-container-for-typescript-and-vs-code-part-1-e653bb95c27f?sk=91a2735225ec4c746b3da0a231c24147)
 
