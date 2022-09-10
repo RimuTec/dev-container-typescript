@@ -1,5 +1,8 @@
 {
-    "git.rebaseWhenSync": true,
-    "remote.restoreForwardedPorts": false,
-    "remote.autoForwardPorts": false
+   "editor.formatOnSave": true,
+   "editor.tabSize": 3,
+   "git.rebaseWhenSync": true,
+   "remote.restoreForwardedPorts": false,
+   "remote.autoForwardPorts": false,
+   "typescript.preferences.quoteStyle": "single"
 }

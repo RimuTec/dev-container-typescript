@@ -22,7 +22,7 @@ You need the following software in order to use this container:
 
 All other tools, e.g. TypeScript, will be available inside the dev container.
 
-# Concepts and Principles
+# Concepts, Principles and Settings
 
 As this container is opinionated, it is maintained with the following concepts in mind:
 
@@ -34,6 +34,9 @@ As this container is opinionated, it is maintained with the following concepts i
 6. Use specific versions for node, npm, typescript and similar dependencies to reduce variability.
 7. Use latest stable releases if possible but no pre-release, beta, previews, etc.
 8. Minimize the number of prerequisites for getting started. All other tools should be specified in the dev container.
+9. TypeScript strings use single quotes
+10. Files are formatted on save
+11. Tab size is 3
 
 # Other Notes
 
