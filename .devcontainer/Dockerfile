@@ -8,8 +8,8 @@ FROM node:18.9.0
 
 
 # node may come with an older version of npm. Ensure we have a specific npm.
-RUN npm install -g npm@8.19.1
-# Last version check on 10 Sep 2022.
+RUN npm install -g npm@8.19.2
+# Last version check on 19 Sep 2022.
 # Newer versions might be available at https://www.npmjs.com/search?q=npm
 # [Manfred]
 
