@@ -1,9 +1,9 @@
-FROM node:18.9.0
-# Last version check on 10 Sep 2022.
+FROM node:18.10.0
+# Last version check on 03 Oct 2022.
 # Newer versions may be available at https://hub.docker.com/_/node
 # Note that if you want to use this container for a Create React Application (CRA)
-# a safer bet will be the most recent LTS version, which is 16.17.0 as of
-# 10 Sep 2022.
+# a safer bet will be the most recent LTS version, which is 16.17.1 as of
+# 03 Oct 2022.
 # [Manfred]
 
 
