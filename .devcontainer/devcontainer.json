@@ -7,14 +7,18 @@
    // The name of the following service has to match one of the services in docker-compose.yml
    "service": "typescript-dev",
    "workspaceFolder": "/work",
-   "extensions": [
-      "firsttris.vscode-jest-runner",
-      "editorconfig.editorconfig",
-      "mhutchie.git-graph",
-      "ms-vsliveshare.vsliveshare",
-      "rtbenfield.vscode-jest-test-adapter",
-      "dbaeumer.vscode-eslint",
-   ],
+   "customizations": {
+      "vscode": {
+         "extensions": [
+            "firsttris.vscode-jest-runner",
+            "editorconfig.editorconfig",
+            "mhutchie.git-graph",
+            "ms-vsliveshare.vsliveshare",
+            "rtbenfield.vscode-jest-test-adapter",
+            "dbaeumer.vscode-eslint",
+         ],
+      }
+   },
    "shutdownAction": "stopCompose",
    "remoteUser": "node",
 }
