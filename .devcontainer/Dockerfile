@@ -9,8 +9,8 @@ FROM node:18.14.1
 ################################################################################
 # Upgrade NPM
 # node may come with an older version of npm. Ensure we have a specific npm.
-RUN npm install -g npm@9.4.2
-# Last version check on 12 Feb 2023.
+RUN npm install -g npm@9.5.0
+# Last version check on 18 Feb 2023.
 # Newer versions might be available at https://www.npmjs.com/search?q=npm
 # [Manfred]
 
