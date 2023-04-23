@@ -1,4 +1,14 @@
+# Documentation of compose spec can be found at https://github.com/compose-spec/compose-spec
+# [Manfred, 21apr2023]
+
 version: '3.7'
+
+# According to the compose spec we can specify the compose project name here. However, VS Code does
+# not honor this as of 21 Apr 2023. Therefore there is a .env file at the root of this git repository
+# in which the environment variable COMPOSE_PROJECT_NAME is defined as 'rimutec'. Once VS Code supports
+# the top-level element 'name', the following can be used instead.
+name: 'rimutec'
+# [Manfred, 21apr2023]
 
 services:
    # change the service name, the container name and the hostname for each dev container that connects
