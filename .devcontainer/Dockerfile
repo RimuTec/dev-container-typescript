@@ -10,7 +10,7 @@ FROM node:20.11.0
 # Upgrade NPM
 # node may come with an older version of npm. Ensure we have a specific npm.
 RUN npm install -g npm@10.4.0
-# Last version check on 27 Jan 2023.
+# Last version check on 27 Jan 2024.
 # Newer versions might be available at https://www.npmjs.com/search?q=npm
 # [Manfred]
 
@@ -26,6 +26,6 @@ RUN apt-get install -y \
 ################################################################################
 # Install TypeScript
 RUN npm install -g typescript@5.3.3
-# Last version check on 27 Jan 2023.
+# Last version check on 27 Jan 2024.
 # Newer versions might be available at https://www.npmjs.com/search?q=typescript
 # [Manfred]
